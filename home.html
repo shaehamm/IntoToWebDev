@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+    Name: Shae Hamm
+    Date Created: 04/22/2020
+    Most recent revision: 05/01/2020
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=devce-width, initial-scale=1, shrink-to-fit=no">
+    <title>Shae's Corner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/d8063e6350.js" crossorigin="anonymous"></script>
+    <style>
+        #description {
+            background-color: #F3EFE0;
+        }
+
+        .carousel-indicators {
+            bottom: -10px;
+        }
+
+        .carousel-indicators .active {
+            background-color: #97D6CC;
+        }
+
+        .carousel-text {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .sr-only {
+            color: #97D6CC;
+        }
+
+        .descriptionTitle {
+            padding-top: 10px;
+        }
+
+        .disabledJS {
+            text-align: center;
+            padding: 10px 5px 10px 5px;
+            background-color: #ED6030;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <noscript>
+            <h2 class="disabledJS"><strong>This site is best viewed with JavaScript enabled.</strong></h2>
+        </noscript>
+        <header class="jumbotron">
+            <h1>Shae's Corner</h1>
+            <h5 class="font-italic">New Location Opening Soon!</h5>
+        </header>
+
+        <nav>
+            <p><a class="btn badge-pill" href="home.html"><i class="fas fa-home"></i></a></p>
+            <p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+            <p><a class="btn badge-pill" href="contact.html">Contact</a></p>
+            <div class="clear-float"></div>
+        </nav>
+
+        <div class="container-fluid">
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h5 class="carousel-text">We're opening a new location!</h5>
+                    </div>
+                    <div class="carousel-item">
+                        <h5 class="carousel-text">Summer menu is now available.</h5>
+                    </div>
+                    <div class="carousel-item">
+                        <h5 class="carousel-text">The Drink of the Month is Turmeric Con Leche.</h5>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md">
+                    <figure><img src="images/crepe-600w.jpg" alt="Apple and pecan crepe with salad."
+                            class="img-fluid" /></figure>
+                </div>
+                <div id="description" class="col-lg-7 col-md">
+                    <h3 class="descriptionTitle">What We're All About</h3>
+                    <p text-align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod
+                        quam a elit rutrum tristique porttitor vel ante. Ut porta erat quam. Cras elit nunc, maximus nec
+                        condimentum et, venenatis et ante. Sed venenatis convallis turpis non egestas. In risus urna,
+                        facilisis a lacus eu, pulvinar commodo erat. Phasellus suscipit lorem sed tortor finibus, ut
+                        sollicitudin risus accumsan. Proin tempor est quis pulvinar condimentum. Suspendisse interdum
+                        tortor sit amet nunc posuere consequat. Aenean scelerisque non nisl non accumsan. Nulla
+                        vulputate quis ex a rhoncus. Quisque vestibulum dolor nec egestas pellentesque.
+                    </p>
+                    <p>Donec vehicula semper vestibulum. Praesent aliquam a ante a convallis. Duis pulvinar sagittis
+                        ullamcorper. Suspendisse quis velit in nunc sagittis volutpat. Nunc et scelerisque libero.
+                        Quisque sem urna, consectetur vitae laoreet eget, sodales quis turpis. Sed eget ex sit amet
+                        nulla finibus fermentum sit amet eget dolor. Morbi sed arcu sit amet enim tincidunt consectetur.
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur
+                        felis mi, convallis vel vestibulum sit amet, molestie ut velit. Cras risus ligula, finibus sit
+                        amet fringilla sed, sagittis in est. Praesent felis mi, imperdiet ut odio vel, bibendum blandit
+                        arcu.
+                    </p>
+                </div>
+                <!--row-->
+            </div>
+            <!--container-fluid-->
+        </div>
+
+        <footer>
+            <p>1515 Palm Beach Ln, White Sands, HI, 96813</p>
+            <p>777-555-1515</p>
+        </footer>
+    </main>
+
+    <!--CDN links-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

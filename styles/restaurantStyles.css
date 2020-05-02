@@ -1,0 +1,61 @@
+/*
+Creator: Shae Hamm
+Date created: 04/24/2020
+Date last modified: 04/29/2020
+*/
+body {
+    background-color: whitesmoke;
+    font-family: 'Poiret One', cursive;
+    color: #0d1f2d;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #6AAD9E;
+    color: #fef9ff;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+
+.clear-float {
+    clear:both;
+}
+
+.jumbotron {
+    background-image: url(../images/view-600w.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+nav a {
+    background-color: #0F2CAA;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;
+}
+
+nav a:visited {
+    color: #D7FDEC;
+}
+
+nav a:hover {
+    background-color: #fef9ff;
+    color: #0F2CAA;
+    font-weight: bold;
+}
+
+nav a:active {
+    text-decoration: none;
+}
+
+.row {
+    text-align: center;
+} 

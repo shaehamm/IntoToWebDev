@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+    Name: Shae Hamm
+    Date Created: 04/22/2020
+    Most recent revision: 05/01/2020
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=devce-width, initial-scale=1, shrink-to-fit=no">
+    <title>Shae's Corner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/d8063e6350.js" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="contactValidate.js"></script>
+    <style>
+        label,
+        fieldset {
+            font-size: 1.1em;
+        }
+
+        input[class=form-control],
+        select[class=form-control] {
+
+            width: 50%;
+            padding: 8px 8px;
+            margin: 12px 0;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        fieldset {
+            background-color: #fef9ff;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 12px 0;
+            box-sizing: border-box;
+        }
+
+        select,
+        textarea {
+            margin: 12px 0;
+            font-size: 1em;
+        }
+
+        button[type=submit] {
+            font-size: 1.2em;
+            background-color: #0F2CAA;
+            color: #fef9ff;
+            padding: 4px 8px;
+            border: none;
+            margin: 18px 22px;
+        }
+
+        button[type=submit]:hover {
+            background-color: #D7FDEC;
+            color: #0F2CAA;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 12px 20px;
+            margin: 12px 0;
+            box-sizing: border-box;
+            border: 2px solid #0d1f2d;
+            border-radius: 3px;
+            background-color: #fff;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="jumbotron">
+            <h1>Shae's Corner</h1>
+            <h5 class="font-italic">New Location Opening Soon!</h5>
+        </header>
+
+        <nav>
+            <p><a class="btn badge-pill" href="home.html"><i class="fas fa-home"></i></a></p>
+            <p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+            <p><a class="btn badge-pill" href="contact.html">Contact</a></p>
+            <div class="clear-float"></div>
+        </nav>
+
+        <body>
+            <form action="submit.html" method="POST" name="contactForm" onsubmit="return validateForm();">
+                <div class="form-group">
+                    <label for="name"><b>First and Last Name</b></label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email address</b></label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="phone"><b>Phone number</b></label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                    <small id="disclaimer" class="form-text text-muted">We'll never share your personal information with
+                        anyone else.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason"><b>Reason for Inquiry</b></label>
+                    <select class="form-control" id="reason">
+                        <option value="default" selected>Catering</option>
+                        <option value="private">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="info">Additional Information:</label>
+                    <textarea class="form-control" id="info" rows="3"></textarea>
+                </div>
+
+                <label>Have you been to the resturant?</label><br />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="choice1" name="questionaire" value="no">
+                    <label class="form-check-label" for="choice1">No</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="choice2" name="questionaire" value="yes">
+                    <label class="form-check-label" for="choice2">Yes</label>
+                </div>
+                <br />
+                <br />
+                <label>Best days to contact you:</label><br />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="monday" name="interest" value="monday">
+                    <label class="form-check-label" for="monday">M</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="tuesday" name="interest" value="tuesday">
+                    <label class="form-check-label" for="tuesday">T</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="wednesday" name="interest" value="wednesday">
+                    <label class="form-check-label" for="wednesday">W</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="thursday" name="interest" value="thursday">
+                    <label class="form-check-label" for="thursday">Th</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="friday" name="interest" value="friday">
+                    <label class="form-check-label" for="friday">F</label>
+                </div>
+                <br />
+                <button type="submit" id="submitButton" class="btn btn-default">Send Request</button>
+
+                <!--<submit type="submit" class="btn btn-primary">Send Request</submit>-->
+
+            </form>
+
+
+
+        </body>
+
+        <footer>
+            <p>1515 Palm Beach Ln, White Sands, HI, 96813</p>
+            <p>777-555-1515</p>
+        </footer>
+    </main>
+    <!--CDN links-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
